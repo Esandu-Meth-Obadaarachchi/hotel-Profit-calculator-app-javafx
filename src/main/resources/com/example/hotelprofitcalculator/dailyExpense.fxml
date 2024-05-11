@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotelprofitcalculator.DailyExpensesController">
+   <children>
+      <AnchorPane fx:id="content" layoutX="74.0" layoutY="45.0" prefHeight="505.0" prefWidth="624.0">
+         <children>
+            <Label fx:id="welcome" alignment="CENTER" layoutX="137.0" layoutY="25.0" prefHeight="47.0" prefWidth="379.0" text="Daily Expenses" wrapText="true" />
+            <Button fx:id="addButt" layoutX="116.0" layoutY="347.0" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="33.0" prefWidth="339.0" text="ADD" wrapText="true" />
+            <Button fx:id="backButton" layoutX="36.0" layoutY="34.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="68.0" text="&lt;==" />
+            <TextField fx:id="dateId" layoutX="200.0" layoutY="127.0" prefHeight="25.0" prefWidth="170.0" promptText="eg: 2024/3/4" />
+            <Label layoutX="92.0" layoutY="129.0" prefHeight="21.0" prefWidth="65.0" text="Date : " />
+            <TextField fx:id="cost" layoutX="199.0" layoutY="268.0" />
+            <Label layoutX="91.0" layoutY="223.0" prefHeight="21.0" prefWidth="87.0" text="Quantity: " />
+            <TextField fx:id="quantity" layoutX="199.0" layoutY="220.0" />
+            <Label layoutX="91.0" layoutY="270.0" prefHeight="21.0" prefWidth="113.0" text="Total Cost : " />
+            <TextField fx:id="itemId" layoutX="199.0" layoutY="172.0" prefHeight="25.0" prefWidth="303.0" />
+            <Label layoutX="91.0" layoutY="174.0" prefHeight="21.0" prefWidth="65.0" text="Item : " />
+            <Label fx:id="errorId" layoutX="178.0" layoutY="308.0" prefHeight="25.0" prefWidth="257.0" />
+         </children>
+      </AnchorPane>
+      <Ellipse fx:id="ellipseOne" layoutX="131.0" layoutY="811.0" radiusX="323.0" radiusY="130.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="ellipseTwo" layoutX="819.0" layoutY="1063.0" radiusX="540.0" radiusY="424.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+   <stylesheets>
+      <URL value="@stylingsheets/main.css" />
+      <URL value="@stylingsheets/rootStyles.css" />
+   </stylesheets>
+</AnchorPane>
